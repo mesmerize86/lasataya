@@ -1,5 +1,10 @@
 	/* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  body{
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+  
 	h1 {
 		font-size: 23px !important;
 	}
