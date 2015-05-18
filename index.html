@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+	<title>Lasataya || Kishor Maharjan</title>
+	<link href="content/css/styles.min.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'> 	
+	<base href="/lasataya/">
+</head>
+<body >
+	<div id="LeftNavigation" ng-controller="MainMenuController">
+		<ul class="iconHolder">
+			<li ng-repeat="menu in menus"><a ng-click="hideNav()" href={{menu.link}} >{{menu.name}}</a></li>
+		</ul>
+	</div>
+<div id="Content" ng-controller="MobileMenuController" ng-class="{'slideContent': status}" >
+		<div class="row logo">
+			<div class="col-xs-2 hidden-sm hidden-md hidden-lg" >
+				<nav class="navbar-default">
+					<button type="button" class="navbar-toggle" ng-click="navSlider()">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button> 
+				</nav>
+			</div>
+			<div class="col-md-12 col-xs-9">
+				<img src="content/images/lasataya_logo.png" alt="lasataya logo" class="img-responsive" />
+			</div>
+		</div>
+		<div class="contentDiv" ng-controller="RouteController">
+			<div class="row">
+				<div class="col-md-12" ng-view>
+				</div>
+			</div>
+			<div class="row">
+				<footer class="col-md-12 text-center footer">
+					<p>&copy; Lasataya 2014 || Kishor Maharjan</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<div id="RightSidebar">
+		<section>
+			<a href="#" class="grid_item">
+				<h3>lasataya</h3>
+			</a>
+		</section>
+	</div>
+
+</body>
+<script src="bower_components/requirejs/lib/require.js" data-main="content/script/config"></script>
+</html>

@@ -1,0 +1,27 @@
+[
+	{
+		"name"		: 	"Home",
+		"link"		:	"home",
+		"active"	: 	"yes"
+	},
+	{
+		"name"		: 	"My Work",
+		"link"		:	"work",
+		"active"	: 	"yes"
+	},
+	{
+		"name"		: 	"What I Do",
+		"link"		:	"profession",
+		"active"	: 	"yes"
+	},
+	{
+		"name"		: 	"Who I Am",
+		"link"		:	"about",
+		"active"	: 	"yes"
+	},
+	{
+		"name"		: 	"Contact",
+		"link"		:	"contact",
+		"active"	: 	"yes"
+	}
+]
