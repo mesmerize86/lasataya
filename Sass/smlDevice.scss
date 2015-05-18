@@ -1,14 +1,23 @@
 	/* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-	h1{
-		font-size: 30px;
+	h1 {
+		font-size: 23px !important;
 	}
-	#LeftNavigation{
+
+  h12 {
+    font-size: 21px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+	#LeftNavigation {
     z-index: 1 !important;
     display: table;
 	}
 
-	#Content{
+	#Content {
 		left: 0;
 		width: 100%;
 
@@ -35,6 +44,7 @@
 	}
 	.navbar-toggle{
 		border:none !important;
+    margin-right: 0px !important;
 	}
 
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus{
