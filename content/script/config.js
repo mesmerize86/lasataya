@@ -7,6 +7,7 @@ requirejs.config({
 		'main'				: 'main',
 		'route' 			: 'route',
 		'nav'				: 'module/nav',
+		'loadCurrentStatus'	: 'module/loadCurrentStatus'
 	},
 
 	shim:{
