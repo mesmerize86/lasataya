@@ -15,15 +15,15 @@
 </head>
 <body >
 	<div id="LeftNavigation" ng-controller="MainMenuController">
-		<ul class="iconHolder">
-			<li ng-repeat="menu in menus"><a ng-click="hideNav()" href={{menu.link}} >{{menu.name}}</a></li>
+		<ul class="iconHolder" >
+			<li ng-repeat="menu in menus" ><a href={{menu.link}} >{{menu.name}}</a></li>
 		</ul>
 	</div>
-<div id="Content" ng-controller="MobileMenuController" ng-class="{'slideContent': status}" >
+<div id="Content" ng-controller="MobileMenuController" ng-Class="{'slidecontent' : status}">
 		<div class="row logo">
 			<div class="col-xs-2 hidden-sm hidden-md hidden-lg" >
 				<nav class="navbar-default">
-					<button type="button" class="navbar-toggle" ng-click="navSlider()">
+					<button type="button" class="navbar-toggle" ng-click="navSlider()" >
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
