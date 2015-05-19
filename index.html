@@ -13,17 +13,17 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'> 	
 	<base href="/lasataya/">
 </head>
-<body >
+<body ng-controller="MobileMenuController">
 	<div id="LeftNavigation" ng-controller="MainMenuController">
-		<ul class="iconHolder" >
-			<li ng-repeat="menu in menus" ><a href={{menu.link}} >{{menu.name}}</a></li>
+		<ul class="iconHolder">
+			<li ng-repeat="menu in menus" ><a href={{menu.link}} ng-click="navSlider()">{{menu.name}}</a></li>
 		</ul>
 	</div>
-<div id="Content" ng-controller="MobileMenuController" ng-Class="{'slidecontent' : status}">
+<div id="Content" ng-class="{'slidecontent' : status}">
 		<div class="row logo">
 			<div class="col-xs-2 hidden-sm hidden-md hidden-lg" >
 				<nav class="navbar-default">
-					<button type="button" class="navbar-toggle" ng-click="navSlider()" >
+					<button type="button" class="navbar-toggle" ng-click="navSlider()">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
