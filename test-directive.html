@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	.slideContent{
+		border: 1px solid black;
+		padding:  10px;
+		background-color: #efefef;
+	}
+	</style>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script>
+		(function($){
+			var app = angular.module('app', []);
+
+			app.controller('AppController', function($scope){
+				$scope.addClass = function(element){
+					var className = 'slideContent';
+					if(!element.hasClass(className)){
+						element.addClass(className);
+					}
+					else {
+						element.removeClass(className);
+					}
+				}
+			})
+			.directive('enter', function(){
+				return{
+					link: function(scope, element, attrs){
+						element.on('click', function(){
+							scope.addClass(element);
+						});
+					}
+				}
+			})
+			.directive('menu', function(){
+				return{
+					link: function(scope, element, attrs){
+						element.on('click', function(){
+							scope.addClass(element);
+						})
+					}
+				}
+			})
+			
+		}(angular));
+	</script>
+</head>
+<body>
+	<div ng-app="app">
+		<div ng-controller="AppController">
+				<div enter =  "addClass()"> Click Here </div>
+				<div>{{name}}</div>
+		</div>
+		<div ng-controller="AppController" menu="addClass()">Second div</div>
+	</div>
+</body>
+</html>
