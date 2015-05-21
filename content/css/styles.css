@@ -12,7 +12,7 @@
   h1 {
     font-size: 23px !important; }
 
-  h12 {
+  h2 {
     font-size: 21px !important; }
 
   h3 {
@@ -20,15 +20,34 @@
 
   #LeftNavigation {
     z-index: 1 !important;
-    display: table; }
+    display: table;
+    opacity: 0;
+    -webkit-transition-duration: 7s;
+    -moz-transition-duration: 7s;
+    -o-transition-duration: 7s;
+    transition-duration: 7s; }
 
   #Content {
     left: 0;
     width: 100%;
-    -webkit-transition-duration: 700ms;
-    -moz-transition-duration: 700ms;
-    -o-transition-duration: 700ms;
-    transition-duration: 700ms; }
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s; }
+
+  .slideMenu {
+    left: 0 !important;
+    opacity: 1 !important; }
+
+  .slideContent {
+    left: 0px !important; }
+
+  .slidecontent {
+    left: 121px !important;
+    -webkit-transition-duration: 1s !important;
+    -moz-transition-duration: 1s !important;
+    -o-transition-duration: 1s !important;
+    transition-duration: 1s !important; }
 
   .logo .img-center {
     margin: 0px auto; }
@@ -48,21 +67,7 @@
 
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
     background-color: #FFFFFF !important;
-    border-radius: 0px; }
-
-  .slidecontent {
-    left: 121px !important;
-    -webkit-transition-property: left;
-    -moz-transition-property: left;
-    -o-transition-property: left;
-    transition-property: left;
-    -webkit-transition-duration: 700ms;
-    -moz-transition-duration: 700ms;
-    -o-transition-duration: 700ms;
-    transition-duration: 700ms;
-    -webkit-box-shadow: -10px 0px 13px 0px rgba(50, 50, 50, 0.53);
-    -moz-box-shadow: -10px 0px 13px 0px rgba(50, 50, 50, 0.53);
-    box-shadow: -10px 0px 13px 0px rgba(50, 50, 50, 0.53); } }
+    border-radius: 0px; } }
 /* ----------- HTC One ----------- */
 /* Portrait and Landscape */
 /* Portrait */
@@ -97,17 +102,31 @@
 /* Landscape */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #LeftNavigation {
-    display: table; }
+    display: table;
+    left: -121px;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms; }
 
   #Content {
-    left: 121px;
-    width: 750px; }
+    width: 750px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s; }
 
   .circle {
     margin: 0; }
 
   .logo img {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+
+  .slideMenu {
+    left: 0 !important; }
+
+  .slideContent {
+    left: 121px !important; } }
 /* ----------- iPad mini ----------- */
 /* Portrait and Landscape */
 /* Portrait */
@@ -130,14 +149,28 @@
 /* Landscape */
 @media (min-width: 1200px) {
   #LeftNavigation {
-    display: table; }
+    display: table;
+    left: -121px;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms; }
 
   #Content {
-    left: 121px;
-    width: 970px; }
+    width: 970px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s; }
 
   .logo img {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+
+  .slideMenu {
+    left: 0 !important; }
+
+  .slideContent {
+    left: 121px !important; } }
 /* ----------- Non-Retina Screens ----------- */
 /* ----------- Retina Screens ----------- */
 body {
@@ -185,7 +218,10 @@ ul.iconHolder {
     color: #91989b; }
   ul.iconHolder a:hover, ul.iconHolder a:active {
     color: #FFF;
-    background-color: #386a91; }
+    background-color: #386a91;
+    -webkit-box-shadow: inset -8px 0px 20px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset -8px 0px 20px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -8px 0px 20px -4px rgba(0, 0, 0, 0.75); }
 
 .logo {
   display: table-row; }
@@ -196,17 +232,20 @@ ul.iconHolder {
 ----------------------------------------------------------------------------*/
 #LeftNavigation {
   background-color: #383d3f;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
   width: 120px;
-  min-height: 600px;
+  min-height: 100%;
   height: 100%;
-  z-index: 999999; }
+  z-index: 11;
+  -webkit-box-shadow: inset -8px 0px 20px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -8px 0px 20px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -8px 0px 20px -4px rgba(0, 0, 0, 0.75); }
 
 #Content {
   position: absolute;
   top: 0;
+  left: -965px;
   z-index: 10;
   height: 100%;
   display: table;

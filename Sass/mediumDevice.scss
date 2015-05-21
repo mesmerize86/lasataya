@@ -3,11 +3,21 @@
   and (max-width: 1200px){
 	#LeftNavigation{
 		display: table;
+    left: -121px;
+
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms;
 	}
 
 	#Content{
-		left: 121px;
 		width: 750px;
+
+    -webkit-transition-duration: 2s;
+      -moz-transition-duration: 2s;
+      -o-transition-duration: 2s;
+      transition-duration: 2s;
 	}
 
 	.circle{
@@ -17,6 +27,16 @@
   .logo img{
     padding-top: 20px;
   }
+
+  .slideMenu {
+    left: 0 !important;
+  }
+
+  .slideContent {
+    left: 121px !important;
+  }
+
+
 
 }
 /* ----------- iPad mini ----------- */

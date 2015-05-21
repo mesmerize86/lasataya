@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 	<meta name="Web Developer" content="Web Developer in Sydney, Kishor Maharjan, Freelancer, Web Design, Web Development" />
 	<meta name="keywords" content="Web Developer, Web Designer, Sydney, Freelancing, Web Development, Freelancer Web development, Freelancing" />
-	<meta name=”google” content=”notranslate” />
+	<meta name="google" content="notranslate" />
 
 	<title>Lasataya || Kishor Maharjan</title>
 	<meta name="robots" content="noindex,nofollow">
@@ -14,12 +14,12 @@
 	<base href="/lasataya/">
 </head>
 <body ng-controller="MobileMenuController">
-	<div id="LeftNavigation" ng-controller="MainMenuController">
+	<div id="LeftNavigation" ng-controller="MainMenuController" slidemenu>
 		<ul class="iconHolder">
 			<li ng-repeat="menu in menus" ><a href={{menu.link}} ng-click="navSlider()">{{menu.name}}</a></li>
 		</ul>
 	</div>
-<div id="Content" ng-class="{'slidecontent' : status}">
+<div id="Content" slidecontent ng-class="{'slidecontent' : status}">
 		<div class="row logo">
 			<div class="col-xs-2 hidden-sm hidden-md hidden-lg" >
 				<nav class="navbar-default">
@@ -46,14 +46,6 @@
 			</div>
 		</div>
 	</div>
-	<div id="RightSidebar">
-		<section>
-			<a href="#" class="grid_item">
-				<h3>lasataya</h3>
-			</a>
-		</section>
-	</div>
-
 </body>
 <script src="bower_components/requirejs/lib/require.js" data-main="content/script/config"></script>
 </html>

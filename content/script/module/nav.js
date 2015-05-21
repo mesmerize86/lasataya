@@ -31,9 +31,42 @@ define(["angular"], function(angular){
 	.controller('MobileMenuController', ['$scope', function(scope){	
 		scope.navSlider = function(){
 			var status = 0;
-
 			scope.status = !scope.status;
 		};
-	}]);
+	}])
+	.directive('slidemenu', function(){
+		return {
+			controller : function ($scope){
+				
+				$scope.slideMenu = function(element){
+					if(!element.hasClass('slideMenu')) {
+						element.addClass('slideMenu');
+					}
+				};
+			},
+			link : function(scope, element) {
+				setTimeout(function(){
+					scope.slideMenu(element);
+				}, 500);
+			}
+		};
+	})
+	.directive('slidecontent', function(){
+		return {
+			controller: function($scope){
+
+				$scope.slideContent = function(element) {
+					if(!element.hasClass('slideContent')) {
+						element.addClass('slideContent');
+					}
+				};
+			},
+			link : function(scope, element) {
+				setTimeout(function(){
+					scope.slideContent(element);
+				}, 800);
+			}
+		};
+	});
 	return navApp;
 });
