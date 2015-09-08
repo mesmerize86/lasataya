@@ -1,6 +1,7 @@
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1200px){
+
 	#LeftNavigation{
 		display: table;
     left: -121px;
@@ -21,8 +22,13 @@
 	}
 
 	.circle{
-		margin: 0;
-	}
+    padding: 20px 17px;
+    width: 180px;
+    height: 180px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
   .logo img{
     padding-top: 20px;
@@ -33,7 +39,7 @@
   }
 
   .slideContent {
-    left: 121px !important;
+    left: 150px !important;
   }
 
 

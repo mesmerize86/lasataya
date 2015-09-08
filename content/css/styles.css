@@ -43,7 +43,7 @@
     left: 0px !important; }
 
   .slidecontent {
-    left: 121px !important;
+    left: 150px !important;
     -webkit-transition-duration: 1s !important;
     -moz-transition-duration: 1s !important;
     -o-transition-duration: 1s !important;
@@ -56,6 +56,9 @@
     text-align: center; }
 
   .circle {
+    width: 140px;
+    height: 140px;
+    padding: 13px 17px;
     margin: 0px auto; }
 
   .navbar-header {
@@ -117,7 +120,11 @@
     transition-duration: 2s; }
 
   .circle {
-    margin: 0; }
+    padding: 20px 17px;
+    width: 180px;
+    height: 180px;
+    margin-left: 40px;
+    margin-right: 40px; }
 
   .logo img {
     padding-top: 20px; }
@@ -126,7 +133,7 @@
     left: 0 !important; }
 
   .slideContent {
-    left: 121px !important; } }
+    left: 150px !important; } }
 /* ----------- iPad mini ----------- */
 /* Portrait and Landscape */
 /* Portrait */
@@ -170,7 +177,14 @@
     left: 0 !important; }
 
   .slideContent {
-    left: 121px !important; } }
+    left: 150px !important; }
+
+  .circle {
+    padding: 20px 17px;
+    width: 180px;
+    height: 180px;
+    margin-left: 40px;
+    margin-right: 40px; } }
 /* ----------- Non-Retina Screens ----------- */
 /* ----------- Retina Screens ----------- */
 body {
@@ -189,7 +203,7 @@ hr {
 a {
   text-decoration: none !important; }
 
-.header, h1, h3, .title {
+.header, h1, h3, h4, .title {
   color: #545e63;
   font-weight: 700; }
 
@@ -198,7 +212,7 @@ h1 {
   h1 span {
     color: #cc0000; }
 
-h3 span {
+h3 span, h4 span {
   color: #cc0000; }
 
 ul.iconHolder {
@@ -234,7 +248,7 @@ ul.iconHolder {
   background-color: #383d3f;
   position: absolute;
   top: 0;
-  width: 120px;
+  width: 155px;
   min-height: 100%;
   height: 100%;
   z-index: 11;
@@ -263,6 +277,14 @@ ul.iconHolder {
   width: 100%;
   height: 30px; }
 
+.circle {
+  background-color: #efefef;
+  text-align: center;
+  -webkit-border-radius: 85px;
+  -moz-border-radius: 85px;
+  -ms-border-radius: 85px;
+  border-radius: 85px; }
+
 /*--------------------------------------------------------------------------
 
 		Right Side bar
@@ -277,17 +299,6 @@ ul.iconHolder {
 
 		Profession
 ----------------------------------------------------------------------------*/
-.circle {
-  background-color: #efefef;
-  padding: 37px 19px;
-  width: 180px;
-  height: 180px;
-  text-align: center;
-  -webkit-border-radius: 85px;
-  -moz-border-radius: 85px;
-  -ms-border-radius: 85px;
-  border-radius: 85px; }
-
 /*--------------------------------------------------------------------------
 
 		Do Not Touch

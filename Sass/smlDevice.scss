@@ -50,7 +50,7 @@
   }
 
   .slidecontent {
-    left: 121px !important;
+    left: 150px !important;
     -webkit-transition-duration: 1s !important;
     -moz-transition-duration: 1s !important;
     -o-transition-duration: 1s !important;
@@ -66,7 +66,13 @@
   }
 
 	.circle{
-		margin: 0px auto;
+    width: 140px;
+    height: 140px;
+
+
+    padding: 13px 17px;
+
+    margin: 0px auto;
 	}
 
 	.navbar-header{

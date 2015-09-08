@@ -32,21 +32,19 @@ a{
 h1{
 	@extend .header;
 	font-size: 45px;
-
 	span
 	{
 		color:#cc0000;
 	}
 }
 
-h3{
+h3, h4{
 	@extend .header;
 	span
 	{
 		color:#cc0000;
 	}
 }
-
 
 ul.iconHolder{
 	display: table-cell;
@@ -82,8 +80,6 @@ ul.iconHolder{
 .logo{
 	display: table-row;
 }
-
-
 /*--------------------------------------------------------------------------
 
 		Content 
@@ -94,7 +90,7 @@ ul.iconHolder{
 	position: absolute;
 	top: 0;
 
-	width: 120px;
+	width: 155px;
 	min-height: 100%;
 	height: 100%;
 
@@ -134,7 +130,12 @@ ul.iconHolder{
 	height: 30px;
 }
 
+.circle {
+	background-color: #efefef;
+    text-align: center;
 
+    @include border-radius(85px);
+}
 
 /*--------------------------------------------------------------------------
 
@@ -145,23 +146,14 @@ ul.iconHolder{
 
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 0
 }
 
 /*--------------------------------------------------------------------------
 
 		Profession
 ----------------------------------------------------------------------------*/
-.circle{
 
-	background-color: #efefef;
-	padding: 37px 19px;
-	width: 180px;
-	height: 180px;
-	text-align: center;
-
-	@include border-radius(85px);
-}
 
 /*--------------------------------------------------------------------------
 
